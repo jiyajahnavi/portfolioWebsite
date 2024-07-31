@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio : Jiya Jahnavi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8e9f8d59b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/file4.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Data scientist</p>
+                <h1>Hi, I'm <span>Jiya Jahnavi</span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------about----- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/pic.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello Everyone,
+                        I'm Jiya Jahnavi, a dedicated Computer Science and Engineering student at Amity University, My career aspiration is to become a data scientist.<br>
+                        My idea behind taking up Computer Science & Engineering is my love for programming and the fact that given the knowledge, I can make a computer do almost anything I want it to do.<br>
+                        I have a keen interest in the field of Machine Learning and Data Science, and I'm presently learning and working on the skills required to expertise in the same.<br>
+                        My hobbies are Painting, Chess,  Badminton, guitar, listening podcasts.<br>
+                        I've also achieved awards in extracurricular activities, including securing a Gold Medal in a chess competition at my University and winning a district-level painting competition.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab(event,'education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Python</span></li>
+                                <li><span>C</span></li>
+                                <li><span>DSA</span></li>
+                                <li><span>Object Oriented Programming</span></li>
+                                <li><span>mySQL</span></li>
+                                <li><span>C++</span></li>
+                                <li><span>Linux</span></li>
+                                <li><span>Git</span></li>
+                                <li><span>Microsoft powerBI</span></li>
+                                <li><span>Machine Learning</span></li>
+                                <li><span>Microsoft Excel</span></li>
+                            </ul>
+                        </div>  
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2023-27</span><br>B.Tech. CSE from Amity University Greater Noida</li>
+                                <li><span>2021-23</span><br>12th from Acme Public School</li>
+                                <li><span>2020-21</span><br>10th from Acme Public School</li>
+                                
+                            </ul>
+                        </div>                        
+                </div>
+            </div>
+        </div>
+    </div>
+<!------projects---->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-lock"></i>
+                <h2>Password Generator</h2>
+                <p>It can create complex passwords using number strings and symbols, offering enhanced security.
+                    <br> This Python project ensures robust and unique passwords to protect your online accounts from 
+                    unauthorized access and potential breaches.</p>
+                <a href="https://github.com/jiyajahnavi/Passwordgeneraor">Code</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-temperature-half"></i>
+                <h2>WeatherFinder</h2>
+                <p>Weather Finder project provides real-time weather information for any city in India. 
+                    It offers current conditions, forecasts, and climate data.</p>
+                <a href="https://github.com/jiyajahnavi/weatherFinder.git">Code</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-hand-scissors"></i>
+                <h2>Rock-paper-scissor-game</h2>
+                <p>The Rock-Paper-Scissors game allows players to choose rock, paper, or scissors against the computer. 
+                    The game determines the winner based on standard rules: rock crushes scissors, scissors cut paper,
+                     and paper covers rock, providing a simple, interactive experience.</p>
+                <a href="https://github.com/jiyajahnavi/Rock-paper-scissor-game">Code</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-moon"></i>
+                <h2>SleepPointerCalculator</h2>
+                <p>A human body requires 7 to 9 pointers of sleep 
+                    if a person sleeps between 9pm to 12 am, the pointer for each hour is 2
+                    and if a person sleeps after 1am, the pointer for each hour is 1
+                    this is a sleep pointer calculator, just enter your sleeping time and wake up time</p>
+                <a href="https://github.com/jiyajahnavi/sleepPointerCalculator">Code</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------cv------>
+<div id="cv">
+    <div class="container">
+        <h1 class="sub-title">My Resume</h1>
+        <img src="image/DOC-20240718-WA0011..pdf (1).png" class="cv-image" alt="Resume">
+        <div class="cv-download">
+            <a href="https://drive.google.com/file/d/14X4kXzeoHgsWh0Z86bGgu4c9dl8BUQbi/view?usp=drivesdk" class="cv-button">
+                <i>Download CV</i>
+                </a>
+        </div>
+    </div>
+</div>
+<!------contact------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> jiyajahnavi01@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/jiya-jahnavi"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/jiyajahnavi"><i class="fa-brands fa-github"></i></a>
+
+
+                </div>
+                <a href="" class="btn btn2"></a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" >Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jiya Jahnavi. All content is protected by copyright law</p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(event,tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0"
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px"
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfhVnJ7lAI6S-gm-T6IzMbq0ODd9ckHmjndoVR2YGcrhmQ-sKNj_lNzqyRMQVxbgrXHw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Submitted successfully"
+                setTimeout(function (){
+                    msg.innerHTML = ""
+                },3000) 
+                form.reset()    
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>
